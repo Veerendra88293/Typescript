@@ -11,3 +11,6 @@ class Person{
 }
 let user = new Person('veeru',2)
 console.log(user)
+
+export{}
+
