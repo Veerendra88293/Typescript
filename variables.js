@@ -65,3 +65,15 @@ function create(user) {
 }
 var obj = { name: "Veeru", age: 25 };
 create(obj); // ✔ pass whole object
+//enum
+var Role;
+(function (Role) {
+    Role["host"] = "host";
+    Role["user"] = "user";
+})(Role || (Role = {}));
+console.log(typeof Role.host);
+console.log(Role.host);
+function checkUser(host) {
+    return host === 'host';
+}
+console.log(checkUser(Role.user));

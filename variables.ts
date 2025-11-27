@@ -81,7 +81,23 @@ let obj = { name: "Veeru", age: 25 };
 
 create(obj);  // ✔ pass whole object
 
+//enum
+enum Role{
+  host="host",
+  user='user'
+}
+console.log(typeof Role.host)
+console.log(Role.host)
 
+function checkUser(host:Role):boolean{
+  return host==='host'
+}
+console.log(checkUser(Role.user))
+
+let id:number=12  //Type Assertion
+id = 'hello' as any
+
+const input = document.getElementById("myInput") as HTMLInputElement;//Type Assertion
 
 
 
